@@ -36,7 +36,7 @@ if (
         echo "<td>";
         if (!empty($winners['female'])) {
             foreach ($winners['female'] as $female) {
-                echo "{$female['name']} ({$female['age']}), {$female['movie']}<br>";
+                echo "{$female['name']} ({$female['age']})<br>{$female['movie']}<br>";
             }
         } else {
             echo "No female winner";
@@ -47,7 +47,7 @@ if (
         echo "<td>";
         if (!empty($winners['male'])) {
             foreach ($winners['male'] as $male) {
-                echo "{$male['name']} ({$male['age']}), {$male['movie']}<br>";
+                echo "{$male['name']} ({$male['age']})<br>{$male['movie']}<br>";
             }
         } else {
             echo "No male winner";
